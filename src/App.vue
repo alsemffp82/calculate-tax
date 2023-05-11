@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container mt-5">
+    <h1>Weekly PAYE calculate</h1>
+    <YourEmployees class="mt-3" />
+    <YourResult class="mt-3" />
+  </div>
+  <div class="fixed-bottom">
+    <p class="text-center">Contact: <a href="mailto:Newbuiow@gmail.com" class="text-decoration-undeline text-black">Newbuiow@gmail.com</a></p>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+import YourEmployees from './components/YourEmployees.vue'
+import YourResult from './components/YourResult.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    YourEmployees,
+    YourResult,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
